@@ -1,0 +1,43 @@
+{
+    "name": "quangbao/laravel-timezone",
+    "license": "MIT",
+    "description": "Timezone storage and retrieval for Laravel",
+    "keywords": [
+        "laravel",
+        "timezone"
+    ],
+    "authors": [
+        {
+            "name": "Quang Bao",
+            "email": "baonq@mcrew-tech.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "laravel/framework": "5.6.* || 5.7.* || 5.8.* || ^6 || ^7 || ^8",
+        "torann/geoip": "^3.0",
+        "nesbot/carbon": "^1.0 || ^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "quangbao\\LaravelTimezone\\": "src/",
+            "quangbao\\LaravelTimezone\\Database\\Seeds\\": "database/seeds/"
+
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "quangbao\\LaravelTimezone\\LaravelTimezoneServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.12"
+    },
+    "scripts": {
+        "pre-package-install": [
+            "@php artisan config:clear"
+        ]
+    }
+}
