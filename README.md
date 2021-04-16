@@ -37,13 +37,13 @@ Or use our nice blade directive
 Pull in the package using Composer
 
 ```
-composer require jamesmills/laravel-timezone
+composer require quangbaorp/laravel-timezone
 ```
 
 Publish database migrations
  
 ```
-php artisan vendor:publish --provider="JamesMills\LaravelTimezone\LaravelTimezoneServiceProvider" --tag=migrations
+php artisan vendor:publish --provider="quangbaorp\LaravelTimezone\LaravelTimezoneServiceProvider" --tag=migrations
 ```
 
 Run the database migrations. This will add a `timezone` column to your `users` table.
