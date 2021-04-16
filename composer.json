@@ -1,5 +1,5 @@
 {
-    "name": "quangbao/Laravel-timezone",
+    "name": "quangbao/laravel-timezone",
     "license": "MIT",
     "description": "Timezone storage and retrieval for Laravel",
     "keywords": [
